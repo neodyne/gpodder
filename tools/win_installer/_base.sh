@@ -98,7 +98,6 @@ certifi==2024.12.14
 chardet==5.2.0
 comtypes==1.4.8
 git+https://github.com/jaraco/pywin32-ctypes.git@f27d6a0
-html5lib==1.1
 idna==3.10
 mutagen==1.47.0
 mygpoclient==1.10
