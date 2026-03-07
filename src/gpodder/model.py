@@ -1583,7 +1583,7 @@ def episode_object_by_uri(channels, uri):
 
     if uri.startswith(prefix):
         # File is on the local filesystem in the download folder
-        # Try to reduce search space by pre-selecting the channel
+        # Try to reduce search space by preselecting the channel
         # based on the folder name of the local file
 
         filename = urllib.parse.unquote(uri[len(prefix):])
@@ -1600,7 +1600,7 @@ def episode_object_by_uri(channels, uri):
         def is_episode(e):
             return e.download_filename == filename
     else:
-        # By default, assume we can't pre-select any channel
+        # By default, assume we can't preselect any channel
         # but can match episodes simply via the download URL
         def is_channel(c):
             return True
